@@ -1,0 +1,38 @@
+configuration {
+    modi: "run,drun,window";
+    icon-theme: "Breeze";
+    show-icons: true;
+    font: "Google Sans 12";
+}
+
+@import "~/.cache/wal/colors-rofi-dark"
+
+* {
+    background-color: @background;
+    text-color: @foreground;
+}
+
+window {
+    border: 0;
+    padding: 20;
+}
+
+element {
+    padding: 5;
+    text-color: @foreground;
+}
+
+element selected {
+    background-color: @selected-active-background;
+    text-color: @background;
+}
+
+element-text {
+    text-color: inherit;
+    vertical-align: 0.5;
+}
+
+element-icon {
+    size: 24;
+    padding: 0 10 0 0;
+} 
