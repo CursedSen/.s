@@ -1,5 +1,7 @@
 assets
+baloofileinformationrc
 BraveSoftware
+cava
 clipse
 discord
 Discord
@@ -23,8 +25,10 @@ obs-studio
 pavucontrol
 pulse
 qt*
+QtProject.conf
 systemd
 Thunar
+user*
 VSCodium
 Vencord
 wal
