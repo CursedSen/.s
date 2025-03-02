@@ -2,4 +2,4 @@
 
 Here is an image:
 
-<img src="https://github.com/CursedSen/.s/blob/main/image.png">
+<img src="https://raw.githubusercontent.com/CursedSen/.s/refs/heads/master/image.png">
