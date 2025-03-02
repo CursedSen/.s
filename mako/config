@@ -1,0 +1,6 @@
+# ~/.config/mako/config
+
+# Set transparency
+background-color = rgba(0, 0, 0, 0.7)
+foreground-color = #FFFFFF
+border-color = rgba(255, 255, 255, 0.2)
