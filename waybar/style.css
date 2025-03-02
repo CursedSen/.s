@@ -1,0 +1,86 @@
+@import "../../.cache/wal/colors-waybar.css";
+
+* {
+  font: 16px "Google Sans";
+  border: none;
+  border-radius: 0px;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+window#waybar {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#window {
+  margin: 2px 2px 2px 2px;
+  color: @foreground;
+}
+
+#cpu,
+#memory,
+#disk,
+#custom-updates,
+#network,
+#mpris {
+  margin: 2px 2px;
+  color: @foreground;
+  border-radius: 10px;
+}
+
+#workspaces {
+  margin: 2px 2px;
+  border-radius: 10px;
+}
+
+#workspaces button {
+  margin: 2px 2px;
+  color: @foreground;
+}
+
+#workspaces button.active {
+  transition: color 0.1s;
+  color: @color3;
+}
+
+#workspaces button.urgent,
+#workspaces button:hover {
+  transition: color 0.1s;
+  color: #8d4040;
+  background-color: transparent;
+}
+
+#notifications {
+  color: @foreground;
+}
+
+#pulseaudio {
+  color: @foreground;
+}
+
+#clock {
+  margin: 0px 10px 0px 2px;
+  color: @foreground;
+}
+
+#battery {
+  margin: 2px 2px;
+  color: @foreground;
+}
+
+#custom-launcher {
+  margin: 0px 2px 0px 10px;
+  color: @foreground;
+}
+
+#custom-notifications {
+  color: @foreground;
+}
+
+#custom-spacer {
+  color: @color3;
+}
+
+#battery {
+  color: @foreground;
+}
