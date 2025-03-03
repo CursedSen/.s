@@ -24,7 +24,7 @@
     "pulseaudio",
     "battery",
     "custom/spacer",
-    "clock"
+    "custom/clock"
   ],
   "custom/launcher": {
     "format": "",
@@ -66,26 +66,41 @@
     "format-paused": "󰐊  {artist} - {title}",
     "max-length": 40,
     "tooltip": false,
-    "cpu": {
-      "format": "   {usage}%",
-      "interval": 2,
-      "tooltip": false
-    },
-    "memory": {
-      "format": "  {used:0.1f}G",
-      "interval": 2,
-      "tooltip": false
-    },
-    "clock": {
-      "format": "{:%H:%M}",
-      "tooltip-format": "{:%Y-%m-%d %H:%M}",
-      "interval": 60
-    }
+    "on-click": "playerctl play-pause",
+    "on-click-right": "playerctl next",
+    "player-order": [
+      "spotify",
+      "firefox",
+      "mpv"
+    ]
+  },
+  "memory": {
+    "format": "  {used:0.1f}G",
+    "interval": 2,
+    "tooltip": false
+  },
+  "clock": {
+    "format": "{:%H:%M}",
+    "tooltip-format": "{:%Y-%m-%d %H:%M}",
+    "interval": 60
+  },
+  "custom/clock": {
+    "format": "{}",
+    "exec": "echo $(date '+%d') $(echo 'I II III IV V VI VII VIII IX X XI XII' | cut -d' ' -f$(date '+%m')) $(date '+%Y %H:%M')",
+    "interval": 60,
+    "tooltip": false
+  },
+  "cpu": {
+    "format": "   {usage}%",
+    "interval": 2,
+    "tooltip": false
   },
   "pulseaudio": {
     "format": "{volume}%",
+    "format-muted": "Muted",
     "scroll-step": 5,
-    "on-click": "pavucontrol"
+    "on-click": "pavucontrol",
+    "on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
   },
   "battery": {
     "format": "- {capacity}%",
@@ -97,12 +112,15 @@
       ""
     ],
     "format-time": "{H}h{M}m",
-    "format-charging": "- {capacity}% - {time}",
-    "format-full": "- Charged",
+    "format-charging": "  {capacity}% - {time}",
+    "format-full": "  Charged",
     "interval": 30,
     "states": {
-      "warning": 25,
-      "critical": 10
+      "full": 100,
+      "high": 80,
+      "mid": 50,
+      "low": 25,
+      "crit": 10
     },
     "tooltip": true,
     "tooltip-format": "{time}",
