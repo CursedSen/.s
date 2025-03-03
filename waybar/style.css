@@ -43,8 +43,13 @@ window#waybar {
   color: @color3;
 }
 
-#workspaces button.urgent,
 #workspaces button:hover {
+  transition: color 0.1s;
+  color: @color5;
+  background-color: transparent;
+}
+
+#workspaces button.urgent {
   transition: color 0.1s;
   color: #8d4040;
   background-color: transparent;
