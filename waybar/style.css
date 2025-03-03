@@ -1,7 +1,9 @@
 @import "../../.cache/wal/colors-waybar.css";
 
 * {
-  font: 16px "Google Sans";
+  font-family: "Google Sans";
+  font-size: 16px;
+  font-weight: normal;
   border: none;
   border-radius: 0px;
   box-shadow: none;
