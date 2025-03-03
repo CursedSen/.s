@@ -83,10 +83,10 @@
     }
   },
   "pulseaudio": {
-      "format": "{volume}%",
-      "scroll-step": 5,
-      "on-click": "pavucontrol"
-    },
+    "format": "{volume}%",
+    "scroll-step": 5,
+    "on-click": "pavucontrol"
+  },
   "battery": {
     "format": "- {capacity}%",
     "format-icons": [
