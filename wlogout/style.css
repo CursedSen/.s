@@ -3,15 +3,15 @@
 * {
   font-size: 18px;
   font-family: "JetBrainsMono Nerd Font";
-	border-radius: 10px;
+  border-radius: 10px;
 }
 
 window {
-	background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
 }
 
 button {
-	color: #fff;
+  color: #fff;
   background-color: rgba(0, 0, 0, 0.4);
   outline-style: none;
   border: none;
@@ -29,19 +29,19 @@ button:focus {
 }
 
 #logout {
-	background-image: image(url("icons/logout.png"));
+  background-image: image(url("icons/logout.png"));
 }
 
 #suspend {
-	background-image: image(url("icons/suspend.png"));
+  background-image: image(url("icons/suspend.png"));
 }
 
 #shutdown {
-	background-image: image(url("icons/shutdown.png"));
+  background-image: image(url("icons/shutdown.png"));
 }
 
 #reboot {
-	background-image: image(url("icons/reboot.png"));
+  background-image: image(url("icons/reboot.png"));
 }
 
 #logout,
