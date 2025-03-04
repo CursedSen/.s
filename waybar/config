@@ -27,6 +27,7 @@
     "mpris",
     "custom/spacer",
     "pulseaudio",
+    "custom/spacer",
     "battery",
     "custom/spacer",
     "custom/clock"
@@ -108,7 +109,7 @@
     "on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
   },
   "battery": {
-    "format": "- {capacity}%",
+    "format": "{capacity}%",
     "format-icons": [
       "",
       "",
@@ -117,7 +118,7 @@
       ""
     ],
     "format-time": "{H}h{M}m",
-    "format-charging": "  {capacity}% - {time}",
+    "format-charging": "{capacity}% - {time}",
     "format-full": "  Charged",
     "interval": 30,
     "states": {
