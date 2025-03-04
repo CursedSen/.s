@@ -1,3 +1,7 @@
 #!/bin/bash
 
-killall waybar && sleep 1 && waybar
+pkill waybar
+
+sleep 1
+
+waybar &
