@@ -2,7 +2,7 @@ configuration {
     modi: "run,drun,window";
     icon-theme: "Breeze";
     show-icons: true;
-    font: "Google Sans 12";
+    font: "Google Sans 16";
 }
 
 @import "~/.cache/wal/colors-rofi-dark"
