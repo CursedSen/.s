@@ -17,6 +17,7 @@ fish/conf.d
 fish/functions
 fish/fish_variables
 glib*
+go
 google*
 gtk*
 kde*
@@ -37,7 +38,8 @@ Thunar
 trashrc
 user*
 VSCodium
-Vencord
+Vencord/dist
+Vencord/settings
 wal
 spotify
 session
