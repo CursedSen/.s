@@ -119,7 +119,7 @@
     ],
     "format-time": "{H}h{M}m",
     "format-charging": "{capacity}% - {time}",
-    "format-full": "  Charged",
+    "format-full": "Charged",
     "interval": 30,
     "states": {
       "full": 100,
