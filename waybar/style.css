@@ -47,7 +47,7 @@ window#waybar {
 
 #workspaces button:hover {
   transition: color 0.1s;
-  color: @color5;
+  color: @color4;
   background-color: transparent;
 }
 
