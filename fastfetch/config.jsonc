@@ -43,7 +43,8 @@
     },
     {
       "type": "media",
-      "format": "{artist} - {title}"
+      "format": "{artist} - {title}",
+      "key": "song"
     },
     "break",
     {
