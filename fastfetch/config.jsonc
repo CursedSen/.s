@@ -42,10 +42,12 @@
       "key": "uptm"
     },
     {
-      "type": "",
-      "key": "song"
+      "type": "media",
+      "format": "{artist} - {title}"
     },
     "break",
-    "colors"
+    {
+      "type": "colors"
+    }
   ]
 }
