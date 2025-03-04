@@ -1,3 +1,4 @@
+arkrc
 assets
 baloofileinformationrc
 BraveSoftware
@@ -23,6 +24,7 @@ mpv
 nwg-look
 obs-studio
 pavucontrol
+ppsspp
 pulse
 qt*
 QtProject.conf
