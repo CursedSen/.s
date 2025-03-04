@@ -1,0 +1,13 @@
+[SddmGreeterTheme]
+Name=WhosThisWhatsThat
+Description=AAAAAAAAAAAAAA
+Screenshot=screenshot.png
+Website=https://sen.wtf
+Author=CursedSen
+License=MIT
+Version=1.12.0
+MainScript=Main.qml
+ConfigFile=theme.conf
+Theme-Id=whosthiswhatsthat
+Theme-API=2.2
+QtVersion=6
