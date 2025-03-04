@@ -1,0 +1,72 @@
+/**
+ * @name WalCord
+ * @author CursedSen
+ * @version 1.0.0
+ * @description Pywal utility for Discord themes
+ * @source https://github.com/CursedSen/Vencord/templates/colors-discord.css
+**/
+
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;700&display=swap');
+
+* {{
+    --font-primary: 'Google Sans', sans-serif !important;
+
+    --background-primary: {background};
+    --background-secondary: {background};
+    --background-tertiary: {background};
+
+    --background-primary-alt: {background};
+    --background-secondary-alt: {background};
+    --background-tertiary-alt: {background};
+
+    --channeltextarea-background: {background};
+    --custom-channel-members-bg: {background};
+
+    --profile-gradient-primary-color: {background};
+    --profile-gradient-secondary-color: {background};
+
+    --__header-bar-background: {background} !important;
+
+    --scrollbar-auto-track: {background};
+    --scrollbar-thin-track: {background};
+    
+    --input-background: color-mix(in srgb, {background}, black 20%);
+    --autocomplete-bg: color-mix(in srgb, {background}, black 20%);
+    --background-nested-floating: color-mix(in srgb, {background}, black 20%);
+    --background-floating: color-mix(in srgb, {background}, black 20%);
+    
+    --primary-630: {background};
+
+    --scrollbar-auto-thumb: {color2};
+    --scrollbar-thin-thumb: {color2};
+    --interactive-muted: {color2};
+    --text-muted: {color2};
+    --background-modifier-hover: color-mix(in srgb, {color2}, black 40%);
+    --background-modifier-active: color-mix(in srgb, {color2}, black 20%);
+    --background-modifier-accent: {color2};
+    --background-accent: {color2};
+
+    --red-400: {color3};
+    --background-modifier-selected: {color3};
+
+    --status-danger: {color4};
+    --button-outline-danger-border: {color4};
+    --button-outline-danger-text: {color4};
+    --button-danger-background: {color4};
+
+    --yellow-300: {color4};
+
+    --header-primary: {color5};
+    --brand-experiment: {color5};
+    --brand-experiment-360: {color5};
+    --brand-experiment-500: {color5};
+    --profile-gradient-button-color: {color5};
+
+    --green-360: {color5};
+
+    --channels-default: {color6};
+    --channel-icon: {color6};
+
+    --text-normal: {color7};
+    --interactive-active: {color7};
+}}
