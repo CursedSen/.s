@@ -11,8 +11,6 @@
   "modules-left": [
     "custom/launcher",
     "custom/spacer",
-    "network#upload",
-    "custom/spacer",
     "hyprland/window"
   ],
   "modules-center": [
