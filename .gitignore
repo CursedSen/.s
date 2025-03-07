@@ -20,6 +20,7 @@ glib*
 go
 google*
 gtk*
+inkscape
 kate*
 kde*
 krita*
@@ -42,6 +43,7 @@ VSCodium
 Vencord/dist
 Vencord/settings
 Vencord/themes/WalCord.css
+vesktop
 wal/colorschemes
 wpg
 spotify
