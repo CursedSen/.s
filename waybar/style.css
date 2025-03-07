@@ -5,7 +5,7 @@
   font-size: 20px;
   font-weight: normal;
   border: none;
-  border-radius: 25px;
+  border-radius: 0px;
   box-shadow: none;
   text-shadow: none;
 }
@@ -23,11 +23,16 @@ window#waybar {
 #memory,
 #disk,
 #custom-updates,
-#network,
+#network#wifi,
 #mpris {
   margin: 2px 2px;
   color: @foreground;
-  border-radius: 10px;
+  border-radius: 0px;
+}
+
+#network.wifi {
+  margin: 2px 2px 2px 2px;
+  color: @foreground;
 }
 
 #workspaces {
@@ -53,7 +58,7 @@ window#waybar {
 
 #workspaces button.urgent {
   transition: color 0.1s;
-  color: #8d4040;
+  color: @color6;
   background-color: transparent;
 }
 
@@ -71,7 +76,7 @@ window#waybar {
 }
 
 #battery {
-  margin: 2px 2px;
+  margin: 2px -7px 2px 2px;
   color: @foreground;
 }
 
@@ -86,4 +91,15 @@ window#waybar {
 
 #custom-spacer {
   color: @color3;
+}
+
+#tooltip {
+  background: rgba(0, 0, 0, 0.5);
+  color: @foreground;
+  font-family: "Google Sans";
+  font-size: 20px;
+  font-weight: normal;
+  border: none;
+  border-radius: 0px;
+  padding: 4px 8px;
 }

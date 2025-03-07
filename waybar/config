@@ -26,8 +26,8 @@
   "modules-right": [
     "mpris",
     "custom/spacer",
+    "network#wifi",
     "pulseaudio",
-    "custom/spacer",
     "battery",
     "custom/spacer",
     "custom/clock"
@@ -36,6 +36,23 @@
     "format": "",
     "on-click": "rofi -show drun -show-icons",
     "tooltip": false
+  },
+  "network#wifi": {
+    "interface": "wlan0",
+    "format-wifi": "{icon} ",
+    "format-disconnected": "󰤭 ",
+    "format-linked": "󰤯 ",
+    "format-icons": [
+      "󰤟",
+      "󰤢",
+      "󰤥",
+      "󰤨"
+    ],
+    "interval": 5,
+    "tooltip": true,
+    "tooltip-format": "{essid} - {signal}%",
+    "tooltip-format-disconnected": "Disconnected",
+    "tooltip-format-linked": "Connected, No Internet"
   },
   "network#upload": {
     "format": "↑ {bandwidthUpBytes}",
@@ -102,25 +119,54 @@
     "tooltip": false
   },
   "pulseaudio": {
-    "format": "{volume}%",
-    "format-muted": "Muted",
+    "format": "{icon} ",
+    "format-muted": " ",
+    "format-icons": [
+      "",
+      "",
+      ""
+    ],
     "scroll-step": 5,
     "on-click": "pavucontrol",
-    "on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
+    "on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+    "tooltip": true,
+    "tooltip-format": "{volume}%",
+    "tooltip-format-muted": "MUTE"
   },
   "battery": {
-    "format": "{capacity}%",
-    "format-icons": [
-      "",
-      "",
-      "",
-      "",
-      ""
-    ],
-    "format-time": "{H}h{M}m",
-    "format-charging": "{capacity}% - {time}",
-    "format-full": "Charged",
-    "interval": 30,
+    "format": "{icon}",
+    "format-icons": {
+      "default": [
+        "󰂃",
+        "󰁺",
+        "󰁻",
+        "󰁼",
+        "󰁽",
+        "󰁾",
+        "󰁿",
+        "󰂀",
+        "󰂁",
+        "󰂂",
+        "󰁹"
+      ],
+      "charging": [
+        "󰂃 ",
+        "󰢜 ",
+        "󰂆 ",
+        "󰂇 ",
+        "󰂈 ",
+        "󰢝 ",
+        "󰂉 ",
+        "󰢞 ",
+        "󰂊 ",
+        "󰂋 ",
+        "󰂅 "
+      ]
+    },
+    "format-time": "{H} h, {M} m",
+    "format-charging": "{icon}",
+    "format-full": "󰁹 Charged",
+    "interval": 1,
     "states": {
       "full": 100,
       "high": 80,
@@ -129,7 +175,6 @@
       "crit": 10
     },
     "tooltip": true,
-    "tooltip-format": "{time}",
-    "on-click": "2"
+    "tooltip-format": "{capacity}% - {time}"
   }
 }
