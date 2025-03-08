@@ -27,7 +27,7 @@
   ],
   "custom/launcher": {
     "format": "",
-    "on-click": "rofi -show drun -show-icons",
+    "on-click": "wlogout -b 4 -m 400px",
     "tooltip": false
   },
   "network#upload": {
