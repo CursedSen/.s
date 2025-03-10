@@ -118,10 +118,10 @@
     "on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
   },
   "battery": {
-    "format": "{capacity}% ",
+    "format": "{capacity}%  ",
     "format-time": "{H}h{M}m",
-    "format-charging": "{capacity}% ",
-    "format-full": "Charged",
+    "format-charging": "{capacity}%  ",
+    "format-full": "Full  ",
     "interval": 30,
     "states": {
       "full": 100,
