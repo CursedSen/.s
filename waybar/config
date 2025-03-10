@@ -8,15 +8,8 @@
   "reload_style_on_change": true,
   "height": 1,
   "spacing": 4,
-  "margin-top": 4,
-  "margin-left": 4,
-  "margin-right": 4,
-  "margin-bottom": 4,
-  "border-radius": 6,
   "modules-left": [
     "custom/launcher",
-    "custom/spacer",
-    "network#upload",
     "custom/spacer",
     "hyprland/window"
   ],
@@ -34,7 +27,7 @@
   ],
   "custom/launcher": {
     "format": "",
-    "on-click": "rofi -show drun -show-icons",
+    "on-click": "wlogout -b 4 -m 400px",
     "tooltip": false
   },
   "network#upload": {
@@ -61,10 +54,26 @@
       "3": "III",
       "4": "IV",
       "5": "V",
+      "6": "VI",
       "7": "VII",
       "8": "VIII",
       "9": "IX",
-      "10": "X"
+      "10": "X",
+      "11": "XI",
+      "12": "XII",
+      "13": "XIII",
+      "14": "XIV",
+      "15": "XV",
+      "16": "XVI",
+      "17": "XVII",
+      "18": "XVIII",
+      "19": "XIX",
+      "20": "XX",
+      "21": "XXI",
+      "22": "XXII",
+      "23": "XXIII",
+      "24": "XXIV",
+      "25": "XXV"
     }
   },
   "mpris": {
