@@ -1,4 +1,10 @@
-vim.cmd("set expandtab")
-vim.cmd("set tabstop=4")
-vim.cmd("set softtabstop=4")
-vim.cmd("set shiftwidth=4")
+local opt = vim.opt
+
+-- UI settings
+opt.number = true
+opt.mouse = "a"
+
+opt.expandtab = true
+opt.shiftwidth = 4
+opt.tabstop = 4
+opt.smartindent = true
