@@ -11,7 +11,7 @@
 }
 
 window#waybar {
-  background: rgba(0, 0, 0, 0.5);
+  background: @background;
 }
 
 #window {
@@ -102,4 +102,16 @@ window#waybar {
   border: none;
   border-radius: 0px;
   padding: 4px 8px;
+}
+
+#tray {
+  padding: 0 3px;
+}
+
+#tray > .passive {
+  -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+  -gtk-icon-effect: highlight;
 }

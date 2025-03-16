@@ -11,6 +11,8 @@
   "modules-left": [
     "custom/launcher",
     "custom/spacer",
+    "tray",
+    "custom/spacer",
     "hyprland/window"
   ],
   "modules-center": [
@@ -29,6 +31,10 @@
     "format": "",
     "on-click": "wlogout -b 4 -m 400px",
     "tooltip": false
+  },
+  "tray": {
+    "icon-size": 16,
+    "spacing": 8
   },
   "network#upload": {
     "format": "↑ {bandwidthUpBytes}",
