@@ -1,6 +1,5 @@
 local opt = vim.opt
 
--- UI settings
 opt.number = true
 opt.mouse = "a"
 
