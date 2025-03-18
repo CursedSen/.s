@@ -74,12 +74,3 @@ package.json
 tsconfig.json
 env.d.ts
 zed
-
-# AGS
-
-ags/@girs
-ags/node_modules
-ags/.gitignore
-package.json
-tsconfig.json
-env.d.ts
