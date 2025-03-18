@@ -1,0 +1,214 @@
+$background: #0a0a0b;
+$foreground: #ece4d0;
+$cursor: #ece4d0;
+$color0: #0a0a0b;
+$color1: #6e6164;
+$color2: #955232;
+$color3: #8e7571;
+$color4: #aa8975;
+$color5: #747a8b;
+$color6: #b89c8f;
+$color7: #ece4d0;
+$color8: #a59f91;
+$color9: #6e6164;
+$color10: #955232;
+$color11: #8e7571;
+$color12: #aa8975;
+$color13: #747a8b;
+$color14: #b89c8f;
+$color15: #ece4d0;
+
+$radius: 0px;
+$margin: 2px;
+
+window.Bar {
+    border: none;
+    border-radius: $radius;
+    box-shadow: none;
+    background-color: $background;
+    color: $foreground;
+    font-family: "Google Sans";
+    font-size: 16px;
+    font-weight: normal;
+    text-shadow: none;
+
+    label {
+        margin: $margin;
+    }
+
+    .Workspaces {
+        margin: $margin;
+        border-radius: 0px;
+
+        button {
+            all: unset;
+            background-color: transparent;
+            margin: $margin;
+            color: $foreground;
+
+            &:hover {
+                transition: color 0.1s;
+                color: $color4;
+                background-color: transparent;
+            }
+
+            &:active {
+                background-color: transparent;
+            }
+
+            label {
+                transition: 100ms;
+                padding: 0 4px;
+                margin: $margin;
+                border-radius: $radius;
+                border: none;
+            }
+        }
+
+        .focused {
+            transition: color 0.1s;
+            color: $color3;
+
+            label {
+                color: $color3;
+                border: none;
+            }
+        }
+
+        .urgent {
+            transition: color 0.1s;
+            color: $color6;
+            background-color: transparent;
+        }
+    }
+
+    .SysTray {
+        padding: 0 4px;
+        background-color: transparent;
+
+        button,
+        image,
+        icon,
+        * {
+            background-color: transparent;
+            padding: 0 4px;
+        }
+
+        menuitem,
+        menu {
+            background-color: $background;
+        }
+
+        .passive {
+            -gtk-icon-effect: dim;
+            background-color: transparent;
+        }
+
+        .needs-attention {
+            -gtk-icon-effect: highlight;
+            background-color: transparent;
+        }
+    }
+
+    .FocusedClient {
+        margin: $margin;
+        color: $foreground;
+    }
+
+    .Media {
+        margin: $margin;
+        color: $foreground;
+        border-radius: $radius;
+
+        .Cover {
+            min-height: 1.2em;
+            min-width: 1.2em;
+            border-radius: $radius;
+            background-position: center;
+            background-size: contain;
+        }
+    }
+
+    .Battery {
+        margin: $margin -7px $margin $margin;
+        color: $foreground;
+
+        label {
+            padding-left: 0;
+            margin-left: 0;
+        }
+    }
+
+    .AudioSlider {
+        * {
+            all: unset;
+        }
+
+        & {
+            margin: 0 1em;
+            color: $foreground;
+        }
+
+        icon {
+            margin-right: 0.6em;
+        }
+
+        trough {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: $radius;
+        }
+
+        highlight {
+            background-color: $color3;
+            min-height: 0.8em;
+            border-radius: $radius;
+        }
+
+        slider {
+            background-color: $foreground;
+            border-radius: $radius;
+            min-height: 1em;
+            min-width: 1em;
+            margin: -0.2em;
+        }
+    }
+
+    .Cpu,
+    .Memory,
+    .Disk,
+    .Updates,
+    .Network,
+    .Clock {
+        margin: $margin;
+        color: $foreground;
+        border-radius: $radius;
+    }
+
+    .Clock {
+        margin: 0px 15px 0px $margin;
+    }
+
+    .Launcher {
+        margin: 0px 7px 0px 15px;
+        color: $foreground;
+    }
+
+    .Notifications {
+        color: $foreground;
+    }
+
+    .Spacer {
+        color: $color3;
+    }
+}
+
+tooltip {
+    background: rgba(0, 0, 0, 0.5);
+    color: $foreground;
+    font-family: "Google Sans";
+    font-size: 16;
+    font-weight: normal;
+    border: none;
+    border-radius: $radius;
+    padding: 4px 8px;
+}
