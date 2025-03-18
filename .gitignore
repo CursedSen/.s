@@ -63,3 +63,13 @@ xsettingsd
 xfce4
 yay
 ZapZap
+zed
+
+# AGS
+
+ags/@girs
+ags/node_modules
+ags/.gitignore
+package.json
+tsconfig.json
+env.d.ts
